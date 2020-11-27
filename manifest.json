@@ -1,6 +1,6 @@
 {
-  "name": "Manifest name",
-  "short_name": "maniName",
+  "name": "Simon by Yoann",
+  "short_name": "Simon",
   "icons": [ {
       "src": "images/hello-icon-192.png",
       "sizes": "192x192",
@@ -13,6 +13,6 @@
   "lang": "fr-FR"                ,
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "pink",
-  "theme_color": "red"
+  "background_color": "white",
+  "theme_color": "black"
 }
