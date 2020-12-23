@@ -1,0 +1,10 @@
+.textCapsule{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: fit-content(100%);
+    grid-column-start: 8;
+    grid-column-end: 11;
+    justify-self: start;
+}
+

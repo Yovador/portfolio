@@ -1,11 +1,13 @@
-.main {
-  text-align: center;
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.main{
+  color:red;
 }

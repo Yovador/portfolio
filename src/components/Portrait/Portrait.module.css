@@ -1,0 +1,10 @@
+.portrait{
+    width: 100%;
+}
+
+.container{
+    width: fit-content(100%);
+    grid-column-start: 3;
+    grid-column-end: 6;
+    align-self: center;
+}
