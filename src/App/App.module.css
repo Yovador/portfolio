@@ -1,13 +1,2 @@
-.row {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  overflow: hidden;
-}
-
 .main{
-  color:red;
 }

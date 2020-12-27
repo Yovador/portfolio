@@ -15,10 +15,12 @@ class TextCapsule extends React.Component{
     render(){
         const {children, title, subtitle} = this.props
         return (
-            <div className={styles.textCapsule}>
+            <div className={styles.textCapsule} >
                 <Title>{title}</Title>
                 <Subtitle>{subtitle}</Subtitle>
-                <DefaultText>{children}</DefaultText>
+                <div className={styles.text} >
+                    <DefaultText>{children}</DefaultText>
+                </div>
             </div>
         );
     }

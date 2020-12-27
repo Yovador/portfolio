@@ -1,0 +1,6 @@
+.separator{
+    border: 1px solid #4B3B7A;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    width: 100%;
+}

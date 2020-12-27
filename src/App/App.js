@@ -1,9 +1,14 @@
 import React from 'react'
+import DefaultText from '../components/DefaultText/DefaultText';
+import Dot from '../components/Dot/Dot';
+import NavBar from '../components/NavBar/NavBar';
 import Portrait from '../components/Portrait/Portrait';
+import RightTextCapsule from '../components/RightTextCapsule/RightTextCapsule';
+import Row from '../components/Row/Row';
+import Separator from '../components/Separator/Separator';
 import TextCapsule from '../components/TextCapsule/TextCapsule';
 import VerticalLine from '../components/VerticalLine/VerticalLine';
 import styles from './App.module.css';
-
 
 class App extends React.Component{
 
@@ -11,7 +16,8 @@ class App extends React.Component{
   render(){
     return (
       <div className={styles.main}>
-        <div className={styles.row}>
+        <NavBar/>
+        <Row marginOn={true}>
           <Portrait path={"./assets/images/portrait.jpg"} alt={"Portrait de Yoann Bouquey"} />
           <VerticalLine column= {7} align={'right'}/>
           <TextCapsule title="Yoann Bouquey" subtitle="Game Designer / Développeur Unity">
@@ -23,7 +29,23 @@ class App extends React.Component{
             <br/>
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
           </TextCapsule>
-        </div>
+        </Row>
+        <Row marginOn={true}>
+          <Separator/>
+        </Row>
+        <Row marginOn={true}>
+          <RightTextCapsule 
+            title= "Qualifications et compétences" 
+            subtitle="Date de modification : Décembre 2020" 
+            list= 
+            {[
+              "Étudiant en 2ème années d’un DUT Métiers du multimédia et de l’Internet",
+              "Certifications OPQUAST (Qualité Web)",
+              "Développement Unity / C#",
+              "Développement web (React-Js)"
+            ]}
+          />
+        </Row>
       </div>
     );
   }

@@ -3,5 +3,7 @@
     font-weight: 300;
     font-size: 16px;
     color: #4B3B7A;
-    margin-top: 4rem;
+    grid-column-start: 4;
+    grid-column-end: 11;
+
 }

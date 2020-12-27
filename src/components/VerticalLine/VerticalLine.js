@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './VerticalLibne.module.css';
+import styles from './VerticalLine.module.css';
 
 class VerticalLine extends React.Component {
     constructor(props) {
@@ -9,7 +9,7 @@ class VerticalLine extends React.Component {
     render() { 
         const {column, align} = this.props
         return (
-            <hr style={{gridColumnStart:column, justifySelf:align}}className={styles.verticalLine} />
+            <hr style={{gridColumnStart:column, justifySelf:align}} className={styles.verticalLine} />
         );
     }
 }

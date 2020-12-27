@@ -1,13 +1,10 @@
-.textCapsule{
+.text{
     display: flex;
     flex-direction: column;
     width: fit-content(100%);
     text-align: left;
-    grid-column-start: 8;
-    grid-column-end: 11;
+    grid-column-start: 3;
+    grid-column-end: 9;
     justify-self: start;
-}
-
-.text{
-    margin-top: 4rem;
+    margin-left: 3rem;
 }
