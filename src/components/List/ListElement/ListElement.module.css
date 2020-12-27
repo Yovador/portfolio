@@ -1,5 +1,9 @@
 .container{
     display: flex;
     margin-top: 4rem;
-    align-content: center;
+}
+
+.text{
+    align-self: center;
+    margin-left: 1.5rem;
 }

@@ -13,7 +13,7 @@ class ListElement extends React.Component {
         return (
             <li className={styles.container} >
                 <Dot/>
-                <div>
+                <div className={styles.text}>
                     <DefaultText>
                             {children} 
                     </DefaultText>

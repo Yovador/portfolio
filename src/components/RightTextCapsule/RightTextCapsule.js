@@ -16,11 +16,13 @@ class RightTextCapsule extends React.Component{
     render(){
         const {title, subtitle, list} = this.props
         return (
-            <div className={styles.text}>
+            <div className={styles.main} >
                 <VerticalLine/>
-                <Title>{title}</Title>
-                <Subtitle>{subtitle}</Subtitle>
-                <List list={list} />
+                <div className={styles.text}>
+                    <Title>{title}</Title>
+                    <Subtitle>{subtitle}</Subtitle>
+                    <List list={list} />
+                </div>
             </div>
         );
     }

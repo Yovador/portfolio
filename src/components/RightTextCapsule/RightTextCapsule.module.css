@@ -3,8 +3,13 @@
     flex-direction: column;
     width: fit-content(100%);
     text-align: left;
+    margin-left: 3rem;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
     grid-column-start: 3;
     grid-column-end: 9;
     justify-self: start;
-    margin-left: 3rem;
 }
