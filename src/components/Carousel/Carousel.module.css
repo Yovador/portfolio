@@ -1,0 +1,65 @@
+button{
+    border: none;
+    margin: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+}
+
+.main{
+    background-color: brown;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    position: relative;
+}
+
+.picContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    align-self: center;
+}
+
+.screenshot{
+    z-index: 0;
+    width: 100%;
+    filter: drop-shadow(4px 4px 10px rgba(75, 59, 122, 0.25));
+}
+
+.arrow {
+    color: white;
+    width: 6rem;
+    height: 100%;
+    z-index: 100;
+}
+
+.arrowLeft{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 0%, rgba(33, 26, 53, 0.231534) 45.83%, rgba(75, 59, 122, 0.2075) 75.52%, rgba(147, 110, 189, 0) 100%);
+}
+
+.arrowRight{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 0%, rgba(33, 26, 53, 0.231534) 45.83%, rgba(75, 59, 122, 0.2075) 75.52%, rgba(147, 110, 189, 0) 100%);
+transform: rotate(-180deg);
+}
+
+.buttonContainer{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    object-fit: cover;
+    align-content: center;
+    justify-content: space-between;
+
+}
+
+.dots{
+    display: flex;
+
+}

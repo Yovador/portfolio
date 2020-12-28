@@ -10,10 +10,12 @@ class List extends React.Component {
     render() { 
         const {list} = this.props 
         let div = []
-        list.forEach(element => {
-            console.log(element)
-            div.push(<ListElement> {element} </ListElement>)
-        });
+        if (list != undefined){
+            list.forEach(element => {
+                console.log(element)
+                div.push(<ListElement> {element} </ListElement>)
+            });
+        }
 
         return (
             <ul className={styles.list} >

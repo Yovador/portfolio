@@ -6,6 +6,6 @@
 .container{
     width: fit-content(100%);
     grid-column-start: 3;
-    grid-column-end: 6;
+    grid-column-end: 7;
     align-self: center;
 }
