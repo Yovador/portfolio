@@ -1,7 +1,5 @@
 import React from 'react'
 import Carousel from '../components/Carousel/Carousel';
-import DefaultText from '../components/DefaultText/DefaultText';
-import Dot from '../components/Dot/Dot';
 import NavBar from '../components/NavBar/NavBar';
 import Portrait from '../components/Portrait/Portrait';
 import RightTextCapsule from '../components/RightTextCapsule/RightTextCapsule';
@@ -59,7 +57,11 @@ class App extends React.Component{
         </Row>
 
         <Row marginOn={true}>
-          <Carousel pathArray={["https://cdn.discordapp.com/attachments/635898689721991169/790598043149008906/unknown.png", "https://cdn.discordapp.com/attachments/635898689721991169/790597955824254976/unknown.png", "https://cdn.discordapp.com/attachments/635898689721991169/790598172023586836/unknown.png", "https://site.groupe-psa.com/content/uploads/sites/9/2016/12/white-background-2.jpg" ]} />
+          <Carousel 
+            pathArray={["https://cdn.discordapp.com/attachments/635898689721991169/790598043149008906/unknown.png", "https://cdn.discordapp.com/attachments/635898689721991169/790597955824254976/unknown.png", "https://cdn.discordapp.com/attachments/635898689721991169/790598172023586836/unknown.png", "https://site.groupe-psa.com/content/uploads/sites/9/2016/12/white-background-2.jpg" ]} 
+            buttonTitle="Lien de la Page itch.io"
+            href="https://yovadorgmailcom.itch.io/masuku"
+          />
           <VerticalLine column= {7} align={'right'}/>
           <TextCapsule title="Masuku" subtitle="Jeux / Projet Étudiant">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -71,6 +73,12 @@ class App extends React.Component{
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
           </TextCapsule>
         </Row>
+
+        <Row marginOn={true}>
+          <Separator/>
+        </Row>
+
+        
 
       </div>
     );

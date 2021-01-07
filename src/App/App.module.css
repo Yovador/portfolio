@@ -1,2 +1,15 @@
 .main{
+  border-radius: 0rem;
+}
+
+button{
+  border: none;
+  margin: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+}
+
+a{
+  all: unset;
 }

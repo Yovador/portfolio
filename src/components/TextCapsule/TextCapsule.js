@@ -11,7 +11,6 @@ class TextCapsule extends React.Component{
         super(props)
     }
 
-
     render(){
         const {children, title, subtitle} = this.props
         return (

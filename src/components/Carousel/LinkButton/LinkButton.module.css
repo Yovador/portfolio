@@ -1,0 +1,21 @@
+.main{ 
+    background: #936EBD;
+    box-shadow: 4px 4px 4px rgba(75, 59, 122, 0.25);
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.text{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #F5F0EB;
+
+
+}

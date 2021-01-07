@@ -5,7 +5,6 @@ import styles from './DefaultText.module.css';
 class DefaultText extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {  }
     }
     render() { 
         const {children} = this.props

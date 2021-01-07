@@ -1,5 +1,7 @@
 import React from 'react';
 import Dot from '../Dot/Dot';
+import LinkButton from './LinkButton/LinkButton';
+import Arrow from './Arrow/Arrow';
 import styles from './Carousel.module.css';
 
 class Carousel extends React.Component {
@@ -76,14 +78,15 @@ class Carousel extends React.Component {
                     <img className={styles.screenshot} src= {this.props.pathArray[this.state.currentImgPath]} />
 
                     <div className={styles.buttonContainer}>
+
                         <button className={styles.arrow, styles.arrowLeft} onClick = {() => this.changeImage(false,-1)} >
-                        {"<"}
+                            <Arrow/>
                         </button>
 
-
                         <button className={styles.arrow, styles.arrowRight} onClick = { () => this.changeImage(false,1)} >
-                        {">"} 
+                            <Arrow/>
                         </button >
+
                     </div>
 
                 </div>
@@ -93,6 +96,8 @@ class Carousel extends React.Component {
                 <div className={styles.dots}>
                     {this.showDot()}
                 </div>    
+
+                <LinkButton href= {this.props.href} > {this.props.buttonTitle} </LinkButton>
 
 
             </div>
