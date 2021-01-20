@@ -1,7 +1,16 @@
 .navText{
+    display: flex;
     text-align: center;
     color: #F5F0EB;
     font-family: Raleway;
     font-weight: 500;
     font-size: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navText:hover{
+    cursor: pointer;
+    background-color: #936ebd50;
+
 }

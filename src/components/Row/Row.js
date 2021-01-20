@@ -12,7 +12,7 @@ class Row extends React.Component {
             marginStyle = '7rem'
         }
         return (
-            <div className={styles.row} style={{marginTop:marginStyle}} >
+            <div id={this.props.id} className={styles.row} style={{marginTop:marginStyle}} >
                 {this.props.children}
             </div>
         );

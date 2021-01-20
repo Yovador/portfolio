@@ -10,9 +10,16 @@ class Dot extends React.Component {
     }
 
     Type(){
-        let div =  <img src="./assets/svg/Dot.svg" className={styles.dot}/>
+
+        let classBundle = styles.dot
+
+        if(this.props.hoverOn){
+            classBundle = classBundle + " , " + styles.dotHover 
+        }
+        
+        let div =  <img src="./assets/svg/Dot.svg" className={classBundle}/>
         if(this.props.unused){
-            div = <img src="./assets/svg/Dot-unselected.svg" className={styles.dot}/>
+            div = <img src="./assets/svg/Dot-unselected.svg" className={classBundle}/>
         }
         return div
     }

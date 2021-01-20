@@ -59,10 +59,10 @@ class Carousel extends React.Component {
 
         for (let i = 0; i < this.props.pathArray.length; i++) {
             if(i === this.state.currentImgPath){
-                div.push(<button onClick = {() => this.changeImage(true, i)} > <Dot/> </button>)
+                div.push(<button onClick = {() => this.changeImage(true, i)} > <Dot hoverOn={true}/> </button>)
             }
             else{
-                div.push(<button onClick = {() => this.changeImage(true, i)}>  <Dot unused={true}  /> </button>)
+                div.push(<button onClick = {() => this.changeImage(true, i)}>  <Dot hoverOn={true} unused={true}  /> </button>)
             }
         }
 
@@ -71,6 +71,9 @@ class Carousel extends React.Component {
 
     render() { 
     
+        const arrowLeft = styles.arrow + " , " + styles.arrowLeft
+        const arrowRight = styles.arrow + " , " + styles.arrowRight
+
         return (
             <div className={styles.main} >
                 
@@ -79,11 +82,11 @@ class Carousel extends React.Component {
 
                     <div className={styles.buttonContainer}>
 
-                        <button className={styles.arrow, styles.arrowLeft} onClick = {() => this.changeImage(false,-1)} >
+                        <button className={arrowLeft } onClick = {() => this.changeImage(false,-1)} >
                             <Arrow/>
                         </button>
 
-                        <button className={styles.arrow, styles.arrowRight} onClick = { () => this.changeImage(false,1)} >
+                        <button className={arrowRight} onClick = { () => this.changeImage(false,1)} >
                             <Arrow/>
                         </button >
 

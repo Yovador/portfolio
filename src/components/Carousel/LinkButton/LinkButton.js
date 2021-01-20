@@ -7,12 +7,13 @@ class LinkButton extends React.Component {
         this.state = {  }
     }
     render() { 
+
         return (
-            <a className = {styles.main} href={this.props.href}>
-                <button className={styles.text} >
-                        {this.props.children}
-                </button>
-            </a>
+            <button className = {styles.main}>
+                <a className={styles.text} href={this.props.href} target="_blank">
+                    {this.props.children}
+                </a>
+            </button>
         );
     }
 }

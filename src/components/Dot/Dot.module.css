@@ -1,3 +1,9 @@
 .dot{
     width: 1rem;
 }
+
+.dotHover:hover{
+    cursor: pointer;
+    background: #936ebd50;
+
+}

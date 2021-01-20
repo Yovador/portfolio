@@ -30,18 +30,16 @@
 }
 
 .arrow {
-    color: white;
     width: 6rem;
     height: 100%;
-    z-index: 100;
 }
 
 .arrowLeft{
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 0%, rgba(33, 26, 53, 0.231534) 45.83%, rgba(75, 59, 122, 0.2075) 75.52%, rgba(147, 110, 189, 0) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 0%, rgba(33, 26, 53, 0.231534) 45.83%, rgba(147, 110, 189, 0) 75.52%, rgba(147, 110, 189, 0) 100%);
 }
 
 .arrowRight{
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 0%, rgba(33, 26, 53, 0.231534) 45.83%, rgba(75, 59, 122, 0.2075) 75.52%, rgba(147, 110, 189, 0) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 0%, rgba(33, 26, 53, 0.231534) 45.83%, rgba(147, 110, 189, 0) 75.52%, rgba(147, 110, 189, 0) 100%);
     transform: rotate(-180deg);
 }
 
@@ -56,8 +54,13 @@
 
 }
 
+.arrow:hover{
+    cursor: pointer;
+    background: #936ebd50;
+}
+
 .dots{
     display: flex;
-
     margin-top: 2rem;
 }
+
