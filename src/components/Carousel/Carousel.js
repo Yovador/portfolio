@@ -32,13 +32,13 @@ class Carousel extends React.Component {
     
                 }
                 else{
-                    path = this.props.pathArray.length -1
+                    path = this.props.picArray.length -1
                     console.log("Go last", path)
                 }
             }
     
             if (value === 1) {
-                if (this.state.currentImgPath != this.props.pathArray.length -1) {
+                if (this.state.currentImgPath != this.props.picArray.length -1) {
                     path += value
                     console.log("Forward", path)
     
@@ -57,7 +57,7 @@ class Carousel extends React.Component {
     showDot () {
         let div = []
 
-        for (let i = 0; i < this.props.pathArray.length; i++) {
+        for (let i = 0; i < this.props.picArray.length; i++) {
             if(i === this.state.currentImgPath){
                 div.push(<button onClick = {() => this.changeImage(true, i)} > <Dot hoverOn={true}/> </button>)
             }
@@ -78,7 +78,7 @@ class Carousel extends React.Component {
             <div className={styles.main} >
                 
                 <div className={styles.picContainer}>
-                    <img className={styles.screenshot} src= {this.props.pathArray[this.state.currentImgPath]} />
+                    <img className={styles.screenshot} src= {this.props.picArray[this.state.currentImgPath].path} alt={this.props.picArray[this.state.currentImgPath].alt} />
 
                     <div className={styles.buttonContainer}>
 

@@ -10,11 +10,9 @@ class NavText extends React.Component {
     render() { 
         const {children, columnStart, columnEnd, path} = this.props
         return (
-
-                <a href= {"#" + path} className={styles.navText} style={{gridColumnStart:columnStart, gridColumnEnd:columnEnd}}>
-                    {children}
-                </a>
-
+            <a href= {"#" + path} className={styles.navText} style={{gridColumnStart:columnStart, gridColumnEnd:columnEnd}}>
+                {children}
+            </a>
         );
     }
 }
