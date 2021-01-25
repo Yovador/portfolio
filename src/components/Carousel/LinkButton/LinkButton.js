@@ -9,11 +9,11 @@ class LinkButton extends React.Component {
     render() { 
 
         return (
-            <button className = {styles.main}>
-                <a className={styles.text} href={this.props.href} target="_blank">
-                    {this.props.children}
-                </a>
-            </button>
+            <a className={styles.main} href={this.props.href} target="_blank">
+                <button className = {styles.text}>
+                        {this.props.children}
+                </button>
+            </a>
         );
     }
 }

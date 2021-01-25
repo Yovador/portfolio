@@ -35,10 +35,10 @@ class App extends React.Component{
         <Row marginOn={true}>
           <RightTextCapsule 
             title= "Qualifications et compétences" 
-            subtitle="Date de modification : Janvier 2020" 
+            subtitle="Date de modification : Janvier 2021" 
             list= 
             {[
-              "Étudiant en 2ème années d’un DUT Métiers du multimédia et de l’Internet",
+              "Étudiant en 2ème années d’un DUT Métiers du Multimédia et de l’Internet",
               "Certifications OPQUAST (Qualité Web)",
               "Développement Unity / C#",
               "Développement web (React-Js)",
