@@ -143,7 +143,52 @@ const mj = new Game(
     "Lien de la Page itch.io"
     ) 
 
-export const games = [masuku, hebi, emi, pt, gb, mj] 
+
+const picsTHH = [
+    new Pic("./assets/images/screens/thh/thh (6)-min.png", "Screenshot de The Helping Hand"),
+    new Pic("./assets/images/screens/thh/thh (1)-min.png", "Screenshot de The Helping Hand"),
+    new Pic("./assets/images/screens/thh/thh (2)-min.png", "Screenshot de The Helping Hand"),
+    new Pic("./assets/images/screens/thh/thh (3)-min.png", "Screenshot de The Helping Hand"),
+    new Pic("./assets/images/screens/thh/thh (4)-min.png", "Screenshot de The Helping Hand"),
+    new Pic("./assets/images/screens/thh/thh (5)-min.png", "Screenshot de The Helping Hand"),
+    new Pic("./assets/images/screens/thh/thh (7)-min.png", "Screenshot de The Helping Hand"),
+    new Pic("./assets/images/screens/thh/thh (8)-min.png", "Screenshot de The Helping Hand"),
+    new Pic("./assets/images/screens/thh/thh (9)-min.png", "Screenshot de The Helping Hand")
+]
+
+const thh = new Game(
+    "EMMI 2021 - The Helping Hand",
+    "Jeux / Game Jam",
+    "Ce jeu à était réalisé lors de l’EMMI Game Jam 2021, qui vois participé des étudiants de MMI Bordeaux, de l’ENSEIRB MatMeca de Bordeaux, et de la Licence Professionnelle Métiers du Jeux Vidéos de Bobigny. Le thème de cette Game Jam était “Lost & Found”, et s'est déroulé sur une période de 48h. Lors de ce projet, j’ai été responsable du développement des actions du joueur, ainsi que du level design.",
+    picsTHH,
+    "https://marchosias6.itch.io/the-helping-hand",
+    "Lien de la Page itch.io"
+)
+
+const picsNuage= [
+    new Pic("./assets/images/screens/Nuage/nuage (1)-min.png", "Screenshot de Nuage"),
+    new Pic("./assets/images/screens/Nuage/nuage (2)-min.png", "Screenshot de Nuage"),
+    new Pic("./assets/images/screens/Nuage/nuage (3)-min.png", "Screenshot de Nuage"),
+    new Pic("./assets/images/screens/Nuage/nuage (4)-min.png", "Screenshot de Nuage"),
+    new Pic("./assets/images/screens/Nuage/nuage (5)-min.png", "Screenshot de Nuage"),
+    new Pic("./assets/images/screens/Nuage/nuage (6)-min.png", "Screenshot de Nuage"),
+    new Pic("./assets/images/screens/Nuage/nuage (7)-min.png", "Screenshot de Nuage"),
+    new Pic("./assets/images/screens/Nuage/nuage (8)-min.png", "Screenshot de Nuage"),
+    new Pic("./assets/images/screens/Nuage/nuage (9)-min.png", "Screenshot de Nuage"),
+    new Pic("./assets/images/screens/Nuage/nuage (10)-min.png", "Screenshot de Nuage"),
+    new Pic("./assets/images/screens/Nuage/nuage (11)-min.png", "Screenshot de Nuage")
+]
+
+const nuage = new Game(
+    "Nuage",
+    "Jeux / Projet Étudiant",
+    "Basée sur la gravure éponyme de l'artiste Philip Mohlitz, Nuage est une expérience narrative se déroulant à l’intérieur du monde de l'œuvre. Notre équipe a ainsi recréé en 3D les différents éléments présents dans la gravure, et a construit un univers autour de tout cela. Je me suis personnellement occupé du développement Unity du jeu, ainsi que la création des différents Shaders donnant l’aspect “Dessin” à notre création.",
+    picsNuage,
+    "https://yoannbouquey.com/Nuage",
+    "Lien vers le Jeu"
+)
+
+export const games = [masuku, nuage, thh, hebi, emi, pt, gb, mj] 
 
 export const whoami = "Je suis Yoann Bouquey, j’ai 20 ans et actuellement étudiant en 2ème année d’un DUT Métier du Multimédia et de l’Internet (MMI) à Bordeaux Je suis aussi passionné par le Game Design et je cherche à en faire mon métier. Lors de ma formation j’ai eu l’occasion de réaliser plusieurs jeux de petite taille que ce soit grâce à des projets ou à des Game Jam. Je suis totalement autonome lorsqu’il s’agit de désigner et d’implémenter des mécaniques de jeux grâce à mes compétences en développement Unity / C#."
 export const portraitSelf = new Pic("./assets/images/portrait.jpg", "Portrait de Yoann Bouquey")
