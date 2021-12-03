@@ -35,14 +35,26 @@ class App extends React.Component{
         <Row marginOn={true}>
           <RightTextCapsule 
             title= "Qualifications et compétences" 
-            subtitle="Date de modification : Janvier 2021" 
+            subtitle="Date de modification : Décembre 2021" 
             list= 
             {[
-              "Étudiant en 2ème années d’un DUT Métiers du Multimédia et de l’Internet",
-              "Certifications OPQUAST (Qualité Web)",
-              "Développement Unity / C#",
-              "Développement web (React-Js)",
-              "Game Design et Level Design"
+              "Gestion de projet Agile",
+              "Conception d’interface utilisateur",
+              "Interview Utilisateur dans le cadre de recherche ou de test utilisateur",
+              "Anglais courant",
+              "Programmation orientée objet",
+              "Prototypage de mécanique de jeu",
+              "Utilisation d’outil de versionning (git)",
+              "Développement Unity",
+              "Développement Android natif",
+              "Développement Unreal Engine",
+              "Développement Web",
+              "Développement d’expérience en Réalité Augmentée",
+              "Modélisation 3D",
+              "Conceptualisation et implémentation de Shader",
+              "Conceptualisation de mécanique de jeu",
+              "Conceptualisation de niveau jouable à partir de mécanique"
+              
             ]}
           />
         </Row>

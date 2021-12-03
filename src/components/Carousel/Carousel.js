@@ -14,6 +14,7 @@ class Carousel extends React.Component {
 
         this.changeImage = this.changeImage.bind(this)
         this.showDot = this.showDot.bind(this)
+        this.displayLinkButton = this.displayLinkButton.bind(this)
     }
 
     changeImage (directMode, value) {
@@ -69,12 +70,21 @@ class Carousel extends React.Component {
         return div
     }
 
+    displayLinkButton(){
+        let divLinkButton = []
+        if(this.props.href != ""){ 
+            divLinkButton.push(<LinkButton href= {this.props.href} > {this.props.buttonTitle} </LinkButton>)
+        }
+        return divLinkButton;
+    }
+
     render() { 
     
         const arrowLeft = styles.arrow + " , " + styles.arrowLeft
         const arrowRight = styles.arrow + " , " + styles.arrowRight
 
         return (
+            
             <div className={styles.main} >
                 
                 <div className={styles.picContainer}>
@@ -99,8 +109,8 @@ class Carousel extends React.Component {
                 <div className={styles.dots}>
                     {this.showDot()}
                 </div>    
-
-                <LinkButton href= {this.props.href} > {this.props.buttonTitle} </LinkButton>
+                {this.displayLinkButton()}
+                
 
 
             </div>
