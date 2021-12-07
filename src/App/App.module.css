@@ -13,3 +13,7 @@ button{
 a{
   all: unset;
 }
+
+strong{
+  font-weight: 600;
+}

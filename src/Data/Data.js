@@ -1,5 +1,5 @@
-class Pic{
-    constructor(path, alt){
+class Pic {
+    constructor(path, alt) {
         this.path = path;
         this.alt = alt;
     }
@@ -7,7 +7,7 @@ class Pic{
 
 
 class Game {
-    constructor(name, type, desc, pics, url, buttonTitle){
+    constructor(name, type, desc, pics, url, buttonTitle) {
         this.name = name;
         this.type = type;
         this.desc = desc;
@@ -33,16 +33,16 @@ const picsMasuku = [
     new Pic("./assets/images/screens/Masuku/Masuku (8)-min.png", "Screenshot de Masuku"),
     new Pic("./assets/images/screens/Masuku/Masuku (9)-min.png", "Screenshot de Masuku"),
     new Pic("./assets/images/screens/Masuku/Masuku (10)-min.png", "Screenshot de Masuku"),
-    new Pic("./assets/images/screens/Masuku/Masuku (11)-min.png", "Screenshot de Masuku")    
+    new Pic("./assets/images/screens/Masuku/Masuku (11)-min.png", "Screenshot de Masuku")
 ]
 
 const masuku = new Game(
-    "Masuku", 
+    "Masuku",
     "Jeu / Projet Étudiant",
-    "Masuku est un auquel j'ai participé à la réalisation, et cela en une semaine lors de ma formation. Pour ce projet, j’étais accompagné de Remi Andrez (Modèle 3D), Flora Moreau (Modèle 3D et Gestion de Projet), Justine Magry (Modèle 3D, Direction Artistique), Ciel Not (Développement des Menus, Game Design et Level Design), Samuel Agut (Modèle 3D, Son) et Lucas Marsalle (Réalisation d’un Making off). Je me suis personnellement chargé du développement et du Game Design / Level Design. Ce jeu est mon deuxième jeu réalisé en 3D Unity, et il m’a permis de grandement comprendre le fonctionnement de la lumière et de l’URP (Universal Render Pipeline). ", 
-    picsMasuku, "https://yovadorgmailcom.itch.io/masuku", 
+    "Masuku est un auquel j'ai participé à la réalisation, et cela en une semaine lors de ma formation. Pour ce projet, j’étais accompagné de Remi Andrez (Modèle 3D), Flora Moreau (Modèle 3D et Gestion de Projet), Justine Magry (Modèle 3D, Direction Artistique), Ciel Not (Développement des Menus, Game Design et Level Design), Samuel Agut (Modèle 3D, Son) et Lucas Marsalle (Réalisation d’un Making off). Je me suis personnellement chargé du développement et du Game Design / Level Design. Ce jeu est mon deuxième jeu réalisé en 3D Unity, et il m’a permis de grandement comprendre le fonctionnement de la lumière et de l’URP (Universal Render Pipeline). ",
+    picsMasuku, "https://yovadorgmailcom.itch.io/masuku",
     "Lien de la Page itch.io"
-    ) 
+)
 
 
 const picsHebi = [
@@ -53,18 +53,18 @@ const picsHebi = [
     new Pic("./assets/images/screens/Hebi/Hebi (5)-min.png", "Screenshot de Hebi's Story"),
     new Pic("./assets/images/screens/Hebi/Hebi (6)-min.png", "Screenshot de HeHebi's Storybi")
 ]
-    
+
 const hebi = new Game(
-    "Hebi's Story", 
+    "Hebi's Story",
     "Jeu / Projet Étudiant",
-    "Hebi’s Story a été réalisé par moi et mon équipe en une semaine dans le cadre de la semaine “Handiplay” durant ma première année en MMI. L’objectif de la semaine était de créer un jeu avec un objectif : l’accessibilité. Pour ce faire, notre équipe constituée de Rémi Andrez, Flora Moreau, Ciel Not, et moi même avons conçu un jeu de type \"Snake\" incluant des murs en obstacles supplémentaires. Il dispose de nombreuses options d’accessibilités, par exemple : les menus sont entièrement navigables au clavier, toutes les touches sont modifiables, la vitesse du jeu est ajustable, et les couleurs du jeu ont un haut taux de contraste. Je me suis personnellement chargé de l’implémentation du jeu sous Unity ainsi que d'une partie du Game Design.", 
+    "Hebi’s Story a été réalisé par moi et mon équipe en une semaine dans le cadre de la semaine “Handiplay” durant ma première année en MMI. L’objectif de la semaine était de créer un jeu avec un objectif : l’accessibilité. Pour ce faire, notre équipe constituée de Rémi Andrez, Flora Moreau, Ciel Not, et moi même avons conçu un jeu de type \"Snake\" incluant des murs en obstacles supplémentaires. Il dispose de nombreuses options d’accessibilités, par exemple : les menus sont entièrement navigables au clavier, toutes les touches sont modifiables, la vitesse du jeu est ajustable, et les couleurs du jeu ont un haut taux de contraste. Je me suis personnellement chargé de l’implémentation du jeu sous Unity ainsi que d'une partie du Game Design.",
     picsHebi,
-    "https://yovadorgmailcom.itch.io/handiplay-2020-groupe6", 
+    "https://yovadorgmailcom.itch.io/handiplay-2020-groupe6",
     "Lien de la Page itch.io"
-    ) 
+)
 
 const picsEmi = [
-    new Pic("./assets/images/screens/Emy/Emy (8)-min.png", "Screenshot de Emy en une Nuit"),   
+    new Pic("./assets/images/screens/Emy/Emy (8)-min.png", "Screenshot de Emy en une Nuit"),
     new Pic("./assets/images/screens/Emy/Emy (1)-min.png", "Screenshot de Emy en une Nuit"),
     new Pic("./assets/images/screens/Emy/Emy (2)-min.png", "Screenshot de Emy en une Nuit"),
     new Pic("./assets/images/screens/Emy/Emy (3)-min.png", "Screenshot de Emy en une Nuit"),
@@ -75,13 +75,13 @@ const picsEmi = [
 ]
 
 const emi = new Game(
-    "EMMI Jam 2020 - Emy en une nuit", 
+    "EMMI Jam 2020 - Emy en une nuit",
     "Jeu / Game Jam",
-    "Emy en une nuit est ma participation à la Game Jam EMMI 2020. Cette Game Jam est organisée entre les étudiants de la filière MMI Bordeaux et ceux de l’ENSEIRB Matméca. Elle a duré 48h et le thème était “EMMI et une nuit”. Dans ce projet, nous étions une équipe de six : Remi Andrez, Ciel Not, Maël Keryell-Even, Quentin Lanneau, Raphaël Geynet  et moi même. J'étais le Game Designer et Level Designer de l’équipe, et j’ai aussi fourni des assets graphiques.", 
+    "Emy en une nuit est ma participation à la Game Jam EMMI 2020. Cette Game Jam est organisée entre les étudiants de la filière MMI Bordeaux et ceux de l’ENSEIRB Matméca. Elle a duré 48h et le thème était “EMMI et une nuit”. Dans ce projet, nous étions une équipe de six : Remi Andrez, Ciel Not, Maël Keryell-Even, Quentin Lanneau, Raphaël Geynet  et moi même. J'étais le Game Designer et Level Designer de l’équipe, et j’ai aussi fourni des assets graphiques.",
     picsEmi,
-    "https://emyenunenuit.itch.io/emy-en-une-nuit-finale", 
+    "https://emyenunenuit.itch.io/emy-en-une-nuit-finale",
     "Lien de la Page itch.io"
-    ) 
+)
 
 
 const picsPT = [
@@ -95,13 +95,13 @@ const picsPT = [
 ]
 
 const pt = new Game(
-    "Playthesis", 
+    "Playthesis",
     "Jeu / Projet Étudiant",
-    "Playthesis est une plateforme de jeu mobile à destination des personnes amputées pour les aider lors de leur rééducation. Pour ce faire, les jeux utilisent un bracelet myoélectrique, qui lit la contraction des muscles et les transmets ensuite au jeu, permettant aux personnes amputées d'entraîner leur bras dans la perspective de pouvoir contrôler une prothèse. J’ai participé au développement de deux des jeux de la plateforme, Seiko et Fishhub.", 
+    "Playthesis est une plateforme de jeu mobile à destination des personnes amputées pour les aider lors de leur rééducation. Pour ce faire, les jeux utilisent un bracelet myoélectrique, qui lit la contraction des muscles et les transmets ensuite au jeu, permettant aux personnes amputées d'entraîner leur bras dans la perspective de pouvoir contrôler une prothèse. J’ai participé au développement de deux des jeux de la plateforme, Seiko et Fishhub.",
     picsPT,
-    "https://playthesis.fr/", 
+    "https://playthesis.fr/",
     "Lien du site Web"
-    ) 
+)
 
 
 
@@ -116,13 +116,13 @@ const picsGB = [
 ]
 
 const gb = new Game(
-    "GMTK 2020 - Let's Kill Gobelin", 
+    "GMTK 2020 - Let's Kill Gobelin",
     "Jeu / Game Jam",
-    " Let’s kill Gobelin est ma participation à la Game Jam Games Maker’s Toolkit 2020 dont le thème était “Out of Control”. J’ai réalisé l'entièreté du jeu en 48h, que ce soit le développement, la conception graphique ou le game design. Dans ce jeu, le but est de créer une armée Gobelin assez faible pour être battue par vos Héros (que vous ne contrôlez pas) mais assez forte pour leur imposer un challenge satisfaisant et maximiser votre score. ", 
+    " Let’s kill Gobelin est ma participation à la Game Jam Games Maker’s Toolkit 2020 dont le thème était “Out of Control”. J’ai réalisé l'entièreté du jeu en 48h, que ce soit le développement, la conception graphique ou le game design. Dans ce jeu, le but est de créer une armée Gobelin assez faible pour être battue par vos Héros (que vous ne contrôlez pas) mais assez forte pour leur imposer un challenge satisfaisant et maximiser votre score. ",
     picsGB,
-    "https://yovadorgmailcom.itch.io/lets-kill-gobelin", 
+    "https://yovadorgmailcom.itch.io/lets-kill-gobelin",
     "Lien de la Page itch.io"
-    ) 
+)
 
 const picsMJ = [
     new Pic("./assets/images/screens/Jellyman/jellyman (1)-min.png", "Screenshot de MisterJellyman"),
@@ -135,13 +135,13 @@ const picsMJ = [
 ]
 
 const mj = new Game(
-    "GTMK 2019 - Mister Jellyman", 
+    "GTMK 2019 - Mister Jellyman",
     "Jeu / Game Jam",
-    " Mister Jellyman est le tout premier jeu que j’ai réalisé, il date d’avant mon entrée en formation MMI pour la Game Jam Games Maker’s Toolkit 2019. Le thème était “Only one”, le jeu se contrôle donc uniquement avec la barre espace. Le joueur incarne Mister Jellyman qui utilise son bras de gelée pour s’accrocher au mur et se balancer. Le jeu est fait sous Gamemaker Studio premier du nom et a été réalisé sous 48h. ", 
+    " Mister Jellyman est le tout premier jeu que j’ai réalisé, il date d’avant mon entrée en formation MMI pour la Game Jam Games Maker’s Toolkit 2019. Le thème était “Only one”, le jeu se contrôle donc uniquement avec la barre espace. Le joueur incarne Mister Jellyman qui utilise son bras de gelée pour s’accrocher au mur et se balancer. Le jeu est fait sous Gamemaker Studio premier du nom et a été réalisé sous 48h. ",
     picsMJ,
-    "https://yovadorgmailcom.itch.io/misterjellyman", 
+    "https://yovadorgmailcom.itch.io/misterjellyman",
     "Lien de la Page itch.io"
-    ) 
+)
 
 
 const picsTHH = [
@@ -165,7 +165,7 @@ const thh = new Game(
     "Lien de la Page itch.io"
 )
 
-const picsNuage= [
+const picsNuage = [
     new Pic("./assets/images/screens/Nuage/nuage (1)-min.png", "Screenshot de Nuage"),
     new Pic("./assets/images/screens/Nuage/nuage (2)-min.png", "Screenshot de Nuage"),
     new Pic("./assets/images/screens/Nuage/nuage (3)-min.png", "Screenshot de Nuage"),
@@ -188,7 +188,7 @@ const nuage = new Game(
     "Lien vers le Jeu"
 )
 
-const picsTronEffect= [
+const picsTronEffect = [
     new Pic("./assets/images/screens/Troneffect/tron-effect (4).png", "Screenshot de TronEffect"),
     new Pic("./assets/images/screens/Troneffect/tron-effect (1).png", "Screenshot de TronEffect"),
     new Pic("./assets/images/screens/Troneffect/tron-effect (2).png", "Screenshot de TronEffect"),
@@ -206,7 +206,7 @@ const troneffect = new Game(
     "Lien de la Page itch.io"
 )
 
-const picsARChicken= [
+const picsARChicken = [
     new Pic("./assets/images/screens/ARChicken/archicken (1).jpg", "Screenshot de ARChicken"),
     new Pic("./assets/images/screens/ARChicken/archicken (2).jpg", "Screenshot de ARChicken"),
     new Pic("./assets/images/screens/ARChicken/archicken (3).jpg", "Screenshot de ARChicken"),
@@ -225,7 +225,7 @@ const archicken = new Game(
     "Lien de l'expérience"
 )
 
-const picsCybernetic= [
+const picsCybernetic = [
     new Pic("./assets/images/screens/cybernetic/cybernetic (6).jpg", "Screenshot de Samedi 10h"),
     new Pic("./assets/images/screens/cybernetic/cybernetic (1).jpg", "Screenshot de Samedi 10h"),
     new Pic("./assets/images/screens/cybernetic/cybernetic (3).jpg", "Screenshot de Samedi 10h"),
@@ -244,7 +244,7 @@ const cybernetic = new Game(
     "Le projet n'est pas public pour le moment"
 )
 
-const picsHaptic= [
+const picsHaptic = [
     new Pic("./assets/images/screens/haptic/haptic (3).jpg", "Screenshot du projet Haptic Fans4All"),
     new Pic("./assets/images/screens/haptic/haptic (1).jpg", "Screenshot du projet Haptic Fans4All"),
     new Pic("./assets/images/screens/haptic/haptic (2).jpg", "Screenshot du projet Haptic Fans4All"),
@@ -262,11 +262,32 @@ const haptic = new Game(
     "Lien de l'association Fans4all"
 )
 
-export const games = [troneffect, cybernetic, archicken, haptic, masuku, nuage, thh] 
+export const games = [troneffect, cybernetic, archicken, haptic, masuku, nuage, thh]
 
-export const whoami = "J’ai toujours été passionnée par toutes les facettes des jeux vidéo. J’ai donc très vite été attirée par la conception d'expériences immersives, et j’ai décidé d’en faire ma carrière. Développement, game design, modélisation 3D, dessin, je suis intéressée par tous les domaines de la création, c’est pourquoi je me suis orientée vers un cursus à visée polyvalente. J’ai commencé par un DUT Métiers du Multimédia et de l’Internet. J’ai pu ainsi apprendre le développement Web, le développement Unity, les métiers de la recherche utilisateurs et du design d’interface, la gestion de projet et les métiers de l’audiovisuel. J’ai poursuivi mon parcours grâce à une licence professionnelle Médias Interactifs et Applications Mixtes Immersives dans le but de commencer à me spécialiser dans la création d’oeuvre interactive. Toutes ses formations avaient pour objectif la polyvalence et le travail en équipe. Par conséquent, je suis capable de facilement m’adapter aux différentes situations de la création d’expérience intéractive."
+export const whoami = "J’ai toujours été passionnée par toutes les facettes des jeux vidéo. J’ai donc très vite été attirée par la <strong> conception d'expériences immersives </strong>, et j’ai décidé d’en faire ma carrière. Développement, game design, modélisation 3D, dessin, je suis intéressée par tous les domaines de la création, c’est pourquoi je me suis orientée vers un cursus à visée polyvalente. J’ai commencé par un DUT Métiers du Multimédia et de l’Internet. J’ai pu ainsi apprendre le développement Web, le développement Unity, les métiers de la recherche utilisateurs et du design d’interface, la gestion de projet et les métiers de l’audiovisuel. J’ai poursuivi mon parcours grâce à une licence professionnelle Médias Interactifs et Applications Mixtes Immersives dans le but de commencer à me spécialiser dans la création d’oeuvre interactive. Toutes ses formations avaient pour objectif  <strong> la polyvalence et le travail en équipe </strong>. Par conséquent, je suis capable de facilement <strong>m’adapter</strong> aux différentes situations de la création d’expérience intéractive."
 export const portraitSelf = new Pic("./assets/images/portrait.jpg", "Portrait de Yoann Bouquey")
 
+export const comp = [
+    "Programmation orientée objet",
+    "Prototypage de mécanique de jeu",
+    "Utilisation d’outil de versionning (git)",
+    "Développement Unity",
+    "Développement Android natif",
+    "Développement Unreal Engine",
+    "Développement Web",
+    "Développement d’expérience en Réalité Augmentée",
+
+    "Modélisation 3D",
+    "Conceptualisation et implémentation de Shader",
+    "Conceptualisation de mécanique de jeu",
+    "Conceptualisation de niveau jouable à partir de mécanique",
+
+    "Gestion de projet Agile",
+    "Conception d’interface utilisateur",
+    "Interview Utilisateur dans le cadre de recherche ou de test utilisateur",
+    "Anglais courant"
+
+]
 
 const data = "Data Loaded"
 export default data

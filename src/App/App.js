@@ -10,14 +10,14 @@ import Separator from '../components/Separator/Separator';
 import ShowGames from '../components/ShowGames/ShowGames';
 import TextCapsule from '../components/TextCapsule/TextCapsule';
 import VerticalLine from '../components/VerticalLine/VerticalLine';
-import {whoami, games, portraitSelf} from '../Data/Data';
+import {whoami, games, portraitSelf, comp} from '../Data/Data';
 import styles from './App.module.css';
-
 
 class App extends React.Component{
 
-
   render(){
+    let divWhoAmITest = []
+    divWhoAmITest.push(whoami)
     return (
       <div className={styles.main} id="me">
         <NavBar/>
@@ -26,7 +26,7 @@ class App extends React.Component{
           <Portrait path={portraitSelf.path} alt={portraitSelf.alt} />
           <VerticalLine column= {7} align={'right'}/>
           <TextCapsule title="Yoann Bouquey" subtitle="Game Designer / Développeur Unity">
-              {whoami}
+              <span dangerouslySetInnerHTML={{__html: whoami}} ></span>
           </TextCapsule>
         </Row>
         <Row marginOn={true}  id="quali">
@@ -36,26 +36,7 @@ class App extends React.Component{
           <RightTextCapsule 
             title= "Qualifications et compétences" 
             subtitle="Date de modification : Décembre 2021" 
-            list= 
-            {[
-              "Gestion de projet Agile",
-              "Conception d’interface utilisateur",
-              "Interview Utilisateur dans le cadre de recherche ou de test utilisateur",
-              "Anglais courant",
-              "Programmation orientée objet",
-              "Prototypage de mécanique de jeu",
-              "Utilisation d’outil de versionning (git)",
-              "Développement Unity",
-              "Développement Android natif",
-              "Développement Unreal Engine",
-              "Développement Web",
-              "Développement d’expérience en Réalité Augmentée",
-              "Modélisation 3D",
-              "Conceptualisation et implémentation de Shader",
-              "Conceptualisation de mécanique de jeu",
-              "Conceptualisation de niveau jouable à partir de mécanique"
-              
-            ]}
+            list= {comp}
           />
         </Row>
 
